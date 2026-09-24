@@ -1,110 +1,110 @@
-# #Dictionaries are used to store data values in key:value pairs.
-# #A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
-# #Dictionaries are written with curly brackets, and have keys and values:
-# #As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
+#Dictionaries are used to store data values in key:value pairs.
+#A dictionary is a collection which is ordered*, changeable and do not allow duplicates.
+#Dictionaries are written with curly brackets, and have keys and values:
+#As of Python version 3.7, dictionaries are ordered. In Python 3.6 and earlier, dictionaries are unordered.
 
-# #create dic
-# dic1 = {
-#     "name":"student",
-#     "marks":90,
-#     "grade":"A"
-# }
-# print(dic1)
+#create dic
+dic1 = {
+    "name":"student",
+    "marks":90,
+    "grade":"A"
+}
+print(dic1)
 
-# #changable
-# #Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
-# #dic()constuctor is used to create dict from another iterable like list ,string,tuple
-# d =dict(name = "rani",age="30")
-# print(d)
+#changable
+#Dictionaries are changeable, meaning that we can change, add or remove items after the dictionary has been created.
+#dic()constuctor is used to create dict from another iterable like list ,string,tuple
+d =dict(name = "rani",age="30")
+print(d)
 
-# #accessing items
-# #you can access the items of a dict by reffers to its key name,inside square bracket or get() method
-# thisdic ={
-#     "month":"may",
-#     "date" :30,
-#     "year":2030
-# }
-# print(thisdic["date"])
-# print("This is accessing using get()method:",thisdic.get("date"))
+#accessing items
+#you can access the items of a dict by reffers to its key name,inside square bracket or get() method
+thisdic ={
+    "month":"may",
+    "date" :30,
+    "year":2030
+}
+print(thisdic["date"])
+print("This is accessing using get()method:",thisdic.get("date"))
 
-# #Get keys
-# #The key()method will return a list of all key in dic.
-# print(thisdic.keys())
+#Get keys
+#The key()method will return a list of all key in dic.
+print(thisdic.keys())
 
-# #The value()method will return a list of all value in dic
-# print(thisdic.values())
+#The value()method will return a list of all value in dic
+print(thisdic.values())
 
-# #items() is a dictionary method that returns all the key-value pairs of a dictionary as a view object.
-# print(thisdic.items())
+#items() is a dictionary method that returns all the key-value pairs of a dictionary as a view object.
+print(thisdic.items())
 
-# #change the value 
-# #you can change the value of a specific item by referring  ist key name
-# di1 = {
-#     "name":"rani",
-#     "age":30,
-#     "city":"Mumbai"
-# }
-# print(di1)
-# di1["age"] = 50
-# print(di1)
+#change the value 
+#you can change the value of a specific item by referring  ist key name
+di1 = {
+    "name":"rani",
+    "age":30,
+    "city":"Mumbai"
+}
+print(di1)
+di1["age"] = 50
+print(di1)
 
-# #update()/change items
-# #update():To add items(key:value) from another dict into the current dict use the this method,if the item doesnot exist the item will be add
-# d1 ={"name":"king","age":30,"city":"Goa"}
-# d2 = {"Student":"raj","marks":90}
-# d1.update(d2)
-# print("d1 and d2 both in single row:",d1)
-# print("Only d2 here:",d2)
+#update()/change items
+#update():To add items(key:value) from another dict into the current dict use the this method,if the item doesnot exist the item will be add
+d1 ={"name":"king","age":30,"city":"Goa"}
+d2 = {"Student":"raj","marks":90}
+d1.update(d2)
+print("d1 and d2 both in single row:",d1)
+print("Only d2 here:",d2)
 
-# d2.update(city="mumbai")
-# print("Here i use update() method and add cityname:",d2)
+d2.update(city="mumbai")
+print("Here i use update() method and add cityname:",d2)
 
-# d2.update(city="rajkot")
-# print("Here change city name:",d2)
+d2.update(city="rajkot")
+print("Here change city name:",d2)
 
-# d1.update({"contury":"india"})
-# print("d1 add conturyname:",d1)
+d1.update({"contury":"india"})
+print("d1 add conturyname:",d1)
 
-# #remove dic
-# #There are server way to remvoe dict but here using pop() remove items with spcifict key name
-# d = {'name': 'king', 'age': 30, 'city': 'Goa', 'Student': 'raj', 'marks': 90, 'contury': 'india'}
-# d.pop("age")
-# print("Remove age:",d)
+#remove dic
+#There are server way to remvoe dict but here using pop() remove items with spcifict key name
+d = {'name': 'king', 'age': 30, 'city': 'Goa', 'Student': 'raj', 'marks': 90, 'contury': 'india'}
+d.pop("age")
+print("Remove age:",d)
 
-# #popitems this is remove last key:value
-# d.popitem()
-# print("Last items remove:",d)
+#popitems this is remove last key:value
+d.popitem()
+print("Last items remove:",d)
 
-# #del keyword also completely del 
-# del d
+#del keyword also completely del 
+del d
 
-# #loop throught
-# di2 = {'name': 'king', 'age': 30, 'city': 'Goa', 'Student': 'raj', 'marks': 90, 'contury': 'india'}
-# for i in di2:
-#     print("Here print only keys:",i)
+#loop throught
+di2 = {'name': 'king', 'age': 30, 'city': 'Goa', 'Student': 'raj', 'marks': 90, 'contury': 'india'}
+for i in di2:
+    print("Here print only keys:",i)
 
-# for i in di2:
-#     print("Here print only values:",di2[i])
+for i in di2:
+    print("Here print only values:",di2[i])
 
-# for i in di2.keys():
-#     print(i)
+for i in di2.keys():
+    print(i)
 
-# for i in di2.values():
-#     print(i)
+for i in di2.values():
+    print(i)
 
-# for i in di2.items():
-#     print(i)
+for i in di2.items():
+    print(i)
 
-# #clear()
-# d = {"name": "Ekta", "age": 20}
-# d.clear()
-# print(d)
+#clear()
+d = {"name": "Ekta", "age": 20}
+d.clear()
+print(d)
 
-# #copy
-# d1 = {"name": "Ekta", "age": 20}
-# d2 = d1.copy()
+#copy
+d1 = {"name": "Ekta", "age": 20}
+d2 = d1.copy()
 
-# print(d2)
+print(d2)
 
 #ex:
 dic ={}

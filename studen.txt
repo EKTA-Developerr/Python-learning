@@ -1,0 +1,8 @@
+Name:Ekta
+Course:MCA
+Sem:1
+subject:Python
+marks:50
+skill:python
+skill:java
+skill:panda
