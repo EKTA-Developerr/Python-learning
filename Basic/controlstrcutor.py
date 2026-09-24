@@ -9,7 +9,7 @@
 #Nested if-else is an if-else statement written inside another if or else statement. It is used to check an additional condition after checking the first condition.
 #if-else inside another if-else = Nested if-else.
 #
-# Even /odd no
+# Even /odd number
 no =int(input("Enter no:"))
 if no % 2 == 0:
     print("Even")
